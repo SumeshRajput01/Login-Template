@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url('https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80');
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container{
+    height: 400px;
+    width: 280px;
+    background: linear-gradient(to left, rgba(253, 253, 253, 0.1), rgba(255, 255, 255, 0.1));
+    border: 2px solid lightblue;
+    box-shadow: 4px 4px 10px hsl(13, 68%, 52%), -4px -4px 10px rgb(216 83 47);
+}
+
+.form-container .form{
+    margin-top: 20%;
+}
+
+.form-container .form .name, .form-container .form .password{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 18px;
+    color: rgb(0, 255, 234);
+}
+
+.form-container .form .name, .form-container .form div{
+    width: 90%;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+.form-container .form .check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-container .form .check label{
+    padding: 0px 10px;
+}
+.form-container .form .check input{
+    padding: 0 5px;
+}
+
+input{
+    height: 25px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(152 1 0);
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    padding: 5px 0px;
+}
+
+.form-container .form .submit-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-container .form .submit-btn .form-btn{
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    border: 2px solid rgb(233, 58, 10);
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), -2px -2px 4px rgba(255, 255, 255, 1);
+    transition: 0.2s linear 0.1s;
+}
+
+.form-container .form .submit-btn:hover .form-btn{
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 2px 2px 4px rgb(195, 13, 13), -2px -2px 4px rgb(195, 13, 13);
+}
